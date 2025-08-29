@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Detection Result</h1>
+
+        <div class="result-card {{ 'real' if label == 'REAL' else 'fake' }}">
+            <h2>Prediction: <span class="label">{{ label }}</span></h2>
+            <p class="confidence">Confidence: <strong>{{ confidence }}%</strong></p>
+            <p class="reason">📌 Reason: {{ reason }}</p>
+        </div>
+
+        <div class="btn-group">
+            <a href="{{ url_for('check') }}" class="btn-secondary">Check Another News</a>
+            <a href="{{ url_for('home') }}" class="btn-secondary">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

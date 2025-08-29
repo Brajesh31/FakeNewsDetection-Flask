@@ -1,0 +1,151 @@
+/* 🌐 Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f8fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #1a73e8;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.info-card {
+    background-color: #eef4ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #444;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #155cc4;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-right: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #1a73e8;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    background-color: #fdfdfd;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+.flash {
+    background-color: #ffe6e6;
+    border-left: 5px solid red;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: #a94442;
+}
+
+.result-card {
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result-card.real {
+    background-color: #e6f4ea;
+    border-left: 6px solid #34a853;
+}
+
+.result-card.fake {
+    background-color: #fce8e6;
+    border-left: 6px solid #ea4335;
+}
+
+.result-card .label {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.result-card .confidence {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.result-card .reason {
+    font-style: italic;
+    color: #666;
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Fake News Detection</h1>
+        <p class="subtitle">Detect whether a news article is <strong>Real</strong> or <strong>Fake</strong> using Machine Learning & NLP</p>
+
+        <div class="info-card">
+            <p>Project by: <strong>LORD</strong></p>
+            <p>Model: Logistic Regression + TF-IDF</p>
+            <p>Tools: Python, Flask, Scikit-learn, HTML, CSS, JavaScript</p>
+        </div>
+
+        <a href="{{ url_for('check') }}" class="btn-primary">Check News</a>
+    </div>
+</body>
+</html>
