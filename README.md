@@ -56,3 +56,5 @@ FakeNewsDetection-Flask/
    git clone https://github.com/your-username/FakeNewsDetection-Flask.git
    cd FakeNewsDetection-Flask
 ````
+
+Last updated: 2026-10-13 15:56 UTC
